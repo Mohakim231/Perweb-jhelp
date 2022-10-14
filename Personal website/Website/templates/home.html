@@ -1,0 +1,154 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content %}
+<style>
+    .overlay-image {
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        top:0;
+        background-position: center;
+        background-size:cover;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-item {
+        height:32rem;
+        background:#000;
+        color:white;
+        position: relative;
+    }
+    .container {
+        position: absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        padding-bottom: 50px;
+    }
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+</style>
+
+<div id="myCarousel" class="carousel slide"
+ data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel"
+        data-slite-to="0" class="active"></li>
+        <li data-target="#myCarousel"
+        data-slite-to="1"></li>
+        <li data-target="#myCarousel"
+        data-slite-to="2"></li>
+        <li data-target="#myCarousel"
+        data-slite-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+     <div class="carousel-item active">
+        <div class="overlay-image" 
+        style="background-image:url(.Website\templates\slide2.jpg);"></div>  
+        <div class="container">
+            <h1>Technology</h1>
+            <p>Find out more about my tech projects
+            made using html, python, bootstrap and flask.
+            </p>
+        </div>
+     </div>
+     <div class="carousel-item">
+        <div class="overlay-image" style="background-image:url(.Website\templates\slide1.jpg);"></div>
+        <div class="container">
+            <h1>Science</h1>
+            <p>Learn about my honours project and my research
+            within nanovaccines.
+        </p>
+        </div>
+     </div>
+     <div class="carousel-item">
+        <div class="overlay-image" style="background-image:url(.Website\templates\slide3.jpg);"></div>
+        <div class="container">
+            <h1>Cosmetics</h1>
+            <p>As part of my bacholers in science I took
+            Cosmetic science learn more about the products I formulated here
+            </p>
+        </div>
+     </div>
+     <div class="carousel-item">
+    <div class="container">
+        <h1>About</h1>
+        <p>Learn more about me, my hobbies and my story
+        </p>
+    </div>
+     </div>
+    <a href="#myCarousel"
+    class="carousel-control-prev" role="button"
+    data-slide="prev">
+        <span class="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon"
+        aria-hidden="true"></span>
+    </a>
+    <a href="#myCarousel"
+    class="carousel-control-next" role="button"
+    data-slide="next">
+        <span class="sr-only">Previous</span>
+        <span class="carousel-control-next-icon"
+        aria-hidden="true"></span>
+    </a>
+    </div>   
+</div>
+
+
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1 mx-auto">Technology</h2>
+        <p class="lead">Something about tech</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal 1h-1">Science</h2>
+        <p class="lead">In my final year of my bacholers of science</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Cosmetic</h2>
+        <p class="lead">something about cosmetics</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">About me</h2>
+        <p class="lead">Talk about yourself</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></svg>
+
+      </div>
+    </div>
+ 
+{% endblock %}
